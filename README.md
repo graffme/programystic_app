@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Programystic Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## MVP Features
+- [x] Basic files structure
+- [x] Basic navigation
+- [x] Theme context and basic global styles
+- [ ] Typography and spacing definition
+- [ ] Responsiveness and various screen sizes
+- [ ] Icons pack
+- [ ] Hello World Section Content (no typing effect and CV download)
+- [ ] CV download
+- [ ] Typing effect in Hello World
+- [ ] Static Experience section content and styles (text only)
+- [ ] Navigation toggle on mobile
+- [ ] Navigation styles into global variables
+- [ ] Footer
+- [ ] Logo
+- [ ] Meta data, FB tags
+- [ ] Accessibility
+- [ ] Analytics
+- [ ] Deploy to Github pages
 
-## Available Scripts
+## Tech Features
+- [ ] Prettier and husky configuration, fix for code style
+- [ ] Automatic deploy on production
+- [ ] Automatic versioning and changelog
+- [ ] Env variables stored on CI
+- [ ] Better docs on technical stack used
+- [ ] Basic tests for curren page
+- [ ] Storybook
 
-In the project directory, you can run:
+## Next Features
+- [ ] Page reading progress bar
+- [ ] Move page to custom hosting
+- [ ] Page positioning on Google
+- [ ] Automated Experience page (from static files or LinkedIn)
+- [ ] Tool Tip on "coding witch" hover with funny text (Casting spells in Typescript, enchanting VS Code and cursing React.)
+- [ ] Developed apps images in Experience page
+- [ ] Boiling cauldron in Experience with stack section (used technologies)
+- [ ] Medium section
+- [ ] Github section
+- [ ] Instagram section
+- [ ] Cookie Popup fo cookies and a magic cookie with a quote
+- [ ] MyLocation detector and text "Currently working from ..."
+- [ ] MyLocation available for user (select location/detect location)
+- [ ] Adjust theme based on users hour
+- [ ] Animated Weather/Holiday background in intro
+- [ ] PWA with notification about new version or new Medium/Instagram post
+- [ ] Ghost kitties for Halloween
+- [ ] User palette changer
+- [ ] Play mode Tool Tip and gems collecting as user explore the page and hidden features
+- [ ] Simple game: to define / Pomodoro
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
