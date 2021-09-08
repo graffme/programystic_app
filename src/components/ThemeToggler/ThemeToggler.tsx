@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { ThemeContext } from "../../context";
 
-const ThemeToggler = memo(() => {
+const ThemeToggler: React.FC<{}> = memo(() => {
   const { toggleTheme, dark } = React.useContext(ThemeContext);
 
   return <StyledThemeToggler onClick={toggleTheme}>{dark ? "🌞" : "🌚"}</StyledThemeToggler>;

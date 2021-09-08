@@ -7,23 +7,6 @@ const palette = {
     lightgrey: '#f1f2f6',
     white: '#ffffff',
   }
-
-  export interface ThemeProps {
-    colors: {
-      lightBackground: string;
-      darkBackground: string;
-      text: string;
-      header: string;
-      primary: string;
-      secondary: string;
-      menuStandardText: string;
-      menuActiveText: string;
-      menuHoverText: string;
-      menuScrolledBackground: string;
-      menuScrolledStandardText: string;
-      menuScrolledActiveText: string;
-    }
-  }
   
   export const lightTheme = {
     colors: {
@@ -81,47 +64,4 @@ const palette = {
       menuScrolledStandardText: palette.lightgrey,
       menuScrolledActiveText: palette.purple,
     },
-  }
-
-
-
-
-
-  
-/* 
-#30336b #686de0
-Light
-- jasne bg: #FFF 
-- ciemne bg: #f1f2f6
-- tekst standardowy: #57606f
-- tekst ciemniejszy na headery: #2f3542
-
-- przycisk tło #5758BB
-- przycisk napis #FFF 
-
-- menu tekst standardowy #57606f
-- menu tekst aktywny #2f3542
-- menu tekst podświetlony #5758BB
-
-- menu tło ciemne #222f3e
-- menu tekst standardowy #f1f2f6
-- menu tekst aktywny #fff
-- menu tekst podświetlony #5758BB
-
-- akcent ciemny: #5758BB
-- akcent jasny: #9980FA
-
-Dark
-- jasne bg #2f3542
-- ciemne bg #222f3e
-- tekst standardowy #f1f2f6
-- tekst jaśniejszy na headery #FFF 
-
-- przycisk tło #5758BB
-- przycisk napis #FFF 
-
-- menu tekst standardowy
-- menu tekst aktywny
-- menu tekst podświetlony
-
-*/
+  };

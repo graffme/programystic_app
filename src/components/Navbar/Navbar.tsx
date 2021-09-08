@@ -1,9 +1,8 @@
 import React, { memo, useCallback, useEffect, useState } from "react";
 import { Link, LinkProps, animateScroll as scroll } from "react-scroll";
-import styled from "styled-components";
+import styled, { DefaultTheme } from "styled-components";
 
 import { ThemeContext } from "../../context";
-import { ThemeProps } from "../../styles";
 import ThemeToggler from '../ThemeToggler';
 
 const navbarHeight = 56;
@@ -29,7 +28,7 @@ const NavLink: React.FC<NavLinkProps> = memo(({ children, to }) => {
 });
 
 /* Navbar component */
-const Navbar = memo(() => {
+const Navbar: React.FC<{}> = memo(() => {
   const [scrolled, setScrolled] = useState(false);
   const navbarColor = useCallback(() => {
     if (window.scrollY > 20) {
@@ -95,7 +94,7 @@ const Navbar = memo(() => {
   );
 });
 
-const StyledNavbar = styled.nav<{ theme: ThemeProps, isScrolled: boolean }>`
+const StyledNavbar = styled.nav<{ theme: DefaultTheme, isScrolled: boolean }>`
   transition: 0.5s;
   background-color: ${props => props.isScrolled ? props.theme.colors.menuScrolledBackground : "transparent"};
   box-shadow: ${props => props.isScrolled ? "5px 10px 12px rgba(0, 0, 0, 0.2)" : "none"};

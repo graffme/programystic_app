@@ -1,14 +1,13 @@
-import { createGlobalStyle } from 'styled-components';
-import { ThemeProps } from './Theme';
+import { createGlobalStyle, DefaultTheme } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --lightBackground: ${({ theme }: { theme: ThemeProps }) => theme.colors.lightBackground};
-    --darkBackground: ${({ theme }: { theme: ThemeProps }) => theme.colors.darkBackground};
-    --text: ${({ theme }: { theme: ThemeProps }) => theme.colors.text};
-    --header: ${({ theme }: { theme: ThemeProps }) => theme.colors.header};
-    --primary: ${({ theme }: { theme: ThemeProps }) => theme.colors.primary};
-    --secondary: ${({ theme }: { theme: ThemeProps }) => theme.colors.secondary};
+    --lightBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.lightBackground};
+    --darkBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.darkBackground};
+    --text: ${({ theme }: { theme: DefaultTheme }) => theme.colors.text};
+    --header: ${({ theme }: { theme: DefaultTheme }) => theme.colors.header};
+    --primary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.primary};
+    --secondary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.secondary};
   }
 
   body {
