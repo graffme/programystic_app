@@ -8,6 +8,9 @@ const GlobalStyles = createGlobalStyle`
     --header: ${({ theme }: { theme: DefaultTheme }) => theme.colors.header};
     --primary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.primary};
     --secondary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.secondary};
+    --buttonBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonBackground};
+    --buttonPressedBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonPressedBackground};
+    --buttonText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonText};
   }
 
   body {

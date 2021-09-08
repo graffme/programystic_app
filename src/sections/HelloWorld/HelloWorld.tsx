@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import { Section } from "../../components";
+import { Button, Section } from "../../components";
 
 const HelloWorld: React.FC = memo(() => {
   return (
@@ -24,7 +24,9 @@ const HelloWorld: React.FC = memo(() => {
         <p>Github: daria.rucka@gmail.com</p>
         <p>Medium: daria.rucka@gmail.com</p>
         <p>Instagram: daria.rucka@gmail.com</p>
-        <p>Get my CV in pdf</p>
+        <Button onClick={() => console.log("Hello")}>
+          Download CV.pdf
+        </Button>
       </div>
     </Section>
   );

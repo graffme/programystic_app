@@ -24,6 +24,10 @@ const palette = {
       menuScrolledBackground: palette.black,
       menuScrolledStandardText: palette.lightgrey,
       menuScrolledActiveText: palette.purple,
+      //Button
+      buttonBackground: palette.darkpurple,
+      buttonPressedBackground: palette.black,
+      buttonText: palette.white,
     },
     // spacing: {
     //   s: 10,
@@ -63,5 +67,9 @@ const palette = {
       menuScrolledBackground: palette.black,
       menuScrolledStandardText: palette.lightgrey,
       menuScrolledActiveText: palette.purple,
+      //Button
+      buttonBackground: palette.darkpurple,
+      buttonPressedBackground: palette.black,
+      buttonText: palette.white,
     },
   };
