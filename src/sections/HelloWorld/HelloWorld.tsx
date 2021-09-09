@@ -16,9 +16,9 @@ const HelloWorld: React.FC = memo(() => {
       }}
     >
       <div className="container">
-        <h2 className="intro_title">
+        <h1 className="intro_title">
           Hello World. I am Daria. A mobile developer and a coding witch.
-        </h2>
+        </h1>
         <p>Email: daria.rucka@gmail.com</p>
         <p>LinkedIn: daria.rucka@gmail.com</p>
         <p>Github: daria.rucka@gmail.com</p>
