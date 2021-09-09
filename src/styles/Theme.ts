@@ -7,6 +7,8 @@ const palette = {
     lightgrey: '#f1f2f6',
     white: '#ffffff',
   }
+
+  const fontUnit = 'px';
   
   export const lightTheme = {
     colors: {
@@ -29,25 +31,20 @@ const palette = {
       buttonPressedBackground: palette.black,
       buttonText: palette.white,
     },
-    // spacing: {
-    //   s: 10,
-    //   m: 20,
-    //   l: 30,
-    //   xl: 50,
-    // },
-    // textVariants: {
-    //   body: {
-    //     fontFamily: 'Montserrat',
-    //     fontSize: 16,
-    //   },
-    //   sizes: {
-    //     s: 14,
-    //     m: 16,
-    //     l: 24,
-    //     xl: 36,
-    //     xxl: 42,
-    //   }
-    // }
+    text: {
+      size: {
+        regular: 18 + fontUnit,
+        h1: 42 + fontUnit,
+        h2: 32 + fontUnit,
+        h3: 24 + fontUnit,
+        h4: 20 + fontUnit,
+      },
+      weight: {
+        regular: 300,
+        header: 400,
+        bold: 500,
+      }
+    }
   };
   
   export const darkTheme = {
@@ -57,7 +54,7 @@ const palette = {
       lightBackground: palette.darkgrey,
       darkBackground: palette.black,
       text: palette.white,
-      header: palette.lightgrey,
+      header: palette.white,
       primary: palette.darkpurple,
       secondary: palette.purple,
       // Menu

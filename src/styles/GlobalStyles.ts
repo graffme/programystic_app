@@ -15,20 +15,47 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background-color: var(--darkBackground);
+    color: var(--text);
   }
 
-  p {
-    color: var(--text);
+  p, span {
+    font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.regular};
+    font-weight: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.regular};
   }
 
   h1, h2, h3, h4 {
     color: var(--header);
+    font-weight: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.header};
+  }
+
+  strong {
+    font-weight: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.bold};
+  }
+
+  h1 {
+    font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.h1};
   }
 
   h2 {
-    font-weight: 300;
-    font-size: 42px;
-    margin-bottom: 30px;
+    font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.h2};
+  }
+
+  h3 {
+    font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.h3};
+  }
+
+  h4 {
+    font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.h4};
+  }
+
+  /* Lists */
+
+  ul li::marker {
+    color: var(--primary);
+  }
+
+  ul li {
+    margin-bottom: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.regular};
   }
 `;
 
