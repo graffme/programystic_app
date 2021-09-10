@@ -4,13 +4,13 @@
 - [x] Basic files structure
 - [x] Basic navigation
 - [x] Theme context and basic global styles
-- [ ] Typography and spacing definition
-- [ ] Responsiveness and various screen sizes
-- [ ] Icons pack
-- [ ] Hello World Section Content (no typing effect and CV download)
+- [x] Typography and spacing definition
+- [x] Responsiveness and various screen sizes
+- [x] Icons pack
+- [x] Hello World Section Content (no typing effect and CV download)
 - [ ] CV download
 - [ ] Typing effect in Hello World
-- [ ] Static Experience section content and styles (text only)
+- [x] Static Experience section content and styles (text only)
 - [ ] Navigation toggle on mobile
 - [ ] Navigation styles into global variables
 - [ ] Footer
@@ -33,7 +33,7 @@
 - [ ] Page reading progress bar
 - [ ] Move page to custom hosting
 - [ ] Page positioning on Google
-- [ ] Automated Experience page (from static files or LinkedIn)
+- [x] Automated Experience page (from static files or LinkedIn)
 - [ ] Tool Tip on "coding witch" hover with funny text (Casting spells in Typescript, enchanting VS Code and cursing React.)
 - [ ] Developed apps images in Experience page
 - [ ] Boiling cauldron in Experience with stack section (used technologies)

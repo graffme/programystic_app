@@ -17,6 +17,7 @@ const StyledButton = styled.button`
   border-radius: 2px;
   padding: 10px 15px;
   color: var(--buttonText);
+  font-weight: 400;
   
   &:active {
     background-color: var(--buttonPressedBackground);

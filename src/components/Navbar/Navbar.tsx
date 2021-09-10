@@ -62,7 +62,7 @@ const Navbar: React.FC<{}> = memo(() => {
           onClick={scrollToTop}
           href="#top"
         >
-          Programystic
+          🧙‍♀️ Programystic
         </a>
         <button
           className="navbar-toggler"
@@ -101,6 +101,8 @@ const StyledNavbar = styled.nav<{ theme: DefaultTheme, isScrolled: boolean }>`
 
   .navbar-brand {
     color: ${props => props.isScrolled ? props.theme.colors.menuScrolledStandardText : props.theme.colors.menuStandardText};
+    font-weight: ${props => props.theme.text.weight.regular};
+    margin-right: var(--spacing_md);
   }
 
   .navbar-brand:hover {

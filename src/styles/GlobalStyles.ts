@@ -8,9 +8,38 @@ const GlobalStyles = createGlobalStyle`
     --header: ${({ theme }: { theme: DefaultTheme }) => theme.colors.header};
     --primary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.primary};
     --secondary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.secondary};
+    --accent: ${({ theme }: { theme: DefaultTheme }) => theme.colors.accent};
     --buttonBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonBackground};
     --buttonPressedBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonPressedBackground};
     --buttonText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonText};
+
+    --spacing_xs: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.xs};
+    --spacing_sm: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.sm};
+    --spacing_md: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.md};
+    --spacing_lg: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.lg};
+    --spacing_xl: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.xl};
+
+    --smallText: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.small};
+    --boldText: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.bold};
+
+    --tagText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.tagText};
+    --tagBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.tagBackground};
+  }
+
+  html {
+    font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.base};
+  }
+
+  @media (max-width: 900px) {
+    html { 
+      font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.baseMedium};
+    }
+  }
+
+  @media (max-width: 500px) {
+    html { 
+      font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.baseSmall};
+    }
   }
 
   body {
@@ -18,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
     color: var(--text);
   }
 
-  p, span {
+  p, span, ul, li {
     font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.regular};
     font-weight: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.regular};
   }
@@ -48,14 +77,39 @@ const GlobalStyles = createGlobalStyle`
     font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.h4};
   }
 
+  a {
+    color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.link};
+
+    &:hover {
+      color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.hoverLink};
+    }
+  }
+
+  .icon {
+    color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.icon};
+  }
+
+  ::-moz-selection {
+    background: ${({ theme }: { theme: DefaultTheme }) => theme.colors.accent};
+    color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.primary};
+  }
+  
+  ::selection {
+    background: ${({ theme }: { theme: DefaultTheme }) => theme.colors.accent};
+    color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.primary};
+  }
+
   /* Lists */
 
   ul li::marker {
-    color: var(--primary);
+    color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.bullet};
   }
 
-  ul li {
-    margin-bottom: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.regular};
+  /* Spacing */
+
+  .container {
+    padding-right: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.lg};
+    padding-left: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.lg};
   }
 `;
 

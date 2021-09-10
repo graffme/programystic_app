@@ -21,6 +21,8 @@ const StyledSection = styled.div<{ theme: DefaultTheme; isDark: boolean }>`
     props.isDark
       ? "var(--sectionBackgroundDark)"
       : "var(--sectionBackgroundLight)"};
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 `;
 
 export default Section;
