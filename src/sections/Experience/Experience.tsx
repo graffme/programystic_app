@@ -28,7 +28,7 @@ const Experience: React.FC = memo(() => {
               CV in pdf format.
             </p>
           </div>
-          <Button onClick={() => console.log("Hello")}>Download CV.pdf</Button>
+          <Button onClick={() => null}><a href="../../CV.pdf" target='_blank' rel='noopener noreferrer'>Download CV.pdf</a></Button>
         </div>
       </div>
     </StyledExperience>
@@ -83,8 +83,12 @@ const StyledExperience = styled(Section)`
       margin: 0;
     }
 
-    .download_cv_text {
+    .download_cv_text a {
       font-weight: 400;
+    }
+
+    a {
+      color: white;
     }
 
     .wrapper {
