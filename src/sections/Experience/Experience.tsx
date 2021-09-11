@@ -24,7 +24,7 @@ const Experience: React.FC = memo(() => {
           <div className="wrapper">
             <p className="bulb">💡</p>
             <p className="download_cv_text">
-              If you are interested in my whole experience please download my
+              TLDR? But, if you are still interested in my whole experience please download my
               CV in pdf format.
             </p>
           </div>

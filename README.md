@@ -1,5 +1,8 @@
 # Programystic Web App
 
+This app is available under https://graffme.github.io/programystic_app/.
+Below is a list of MVP features and features for next versions.
+
 ## MVP Features
 - [x] Basic files structure
 - [x] Basic navigation
@@ -8,17 +11,17 @@
 - [x] Responsiveness and various screen sizes
 - [x] Icons pack
 - [x] Hello World Section Content (no typing effect and CV download)
-- [ ] CV download
+- [x] CV download
 - [ ] Typing effect in Hello World
 - [x] Static Experience section content and styles (text only)
 - [ ] Navigation toggle on mobile
 - [ ] Navigation styles into global variables
 - [ ] Footer
-- [ ] Logo
-- [ ] Meta data, FB tags
+- [ ] App icon
+- [ ] Meta data, FB tags, manifest
 - [ ] Accessibility
 - [ ] Analytics
-- [ ] Deploy to Github pages
+- [x] Deploy to Github pages
 
 ## Tech Features
 - [ ] Prettier and husky configuration, fix for code style
