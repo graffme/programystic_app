@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/programystic_app/static/css/main.a6702f32.chunk.css",
+    "main.js": "/programystic_app/static/js/main.0dd9870f.chunk.js",
+    "main.js.map": "/programystic_app/static/js/main.0dd9870f.chunk.js.map",
+    "runtime-main.js": "/programystic_app/static/js/runtime-main.771ab440.js",
+    "runtime-main.js.map": "/programystic_app/static/js/runtime-main.771ab440.js.map",
+    "static/js/2.346c3382.chunk.js": "/programystic_app/static/js/2.346c3382.chunk.js",
+    "static/js/2.346c3382.chunk.js.map": "/programystic_app/static/js/2.346c3382.chunk.js.map",
+    "static/js/3.57bf8acd.chunk.js": "/programystic_app/static/js/3.57bf8acd.chunk.js",
+    "static/js/3.57bf8acd.chunk.js.map": "/programystic_app/static/js/3.57bf8acd.chunk.js.map",
+    "static/js/4.12ef5b2f.chunk.js": "/programystic_app/static/js/4.12ef5b2f.chunk.js",
+    "static/js/4.12ef5b2f.chunk.js.map": "/programystic_app/static/js/4.12ef5b2f.chunk.js.map",
+    "index.html": "/programystic_app/index.html",
+    "static/css/main.a6702f32.chunk.css.map": "/programystic_app/static/css/main.a6702f32.chunk.css.map",
+    "static/js/2.346c3382.chunk.js.LICENSE.txt": "/programystic_app/static/js/2.346c3382.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.771ab440.js",
+    "static/js/2.346c3382.chunk.js",
+    "static/css/main.a6702f32.chunk.css",
+    "static/js/main.0dd9870f.chunk.js"
+  ]
+}
