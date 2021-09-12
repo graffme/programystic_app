@@ -12,7 +12,6 @@ Below is a list of MVP features and features for next versions.
 - [x] Icons pack
 - [x] Hello World Section Content (no typing effect and CV download)
 - [x] CV download
-- [ ] Typing effect in Hello World
 - [x] Static Experience section content and styles (text only)
 - [ ] Navigation toggle on mobile
 - [ ] Navigation styles into global variables
@@ -29,24 +28,24 @@ Below is a list of MVP features and features for next versions.
 - [ ] Automatic versioning and changelog
 - [ ] Env variables stored on CI
 - [ ] Better docs on technical stack used
-- [ ] Basic tests for curren page
+- [ ] Basic tests for current page
 - [ ] Storybook
 
 ## Next Features
+- [ ] Typing effect in Hello World
+- [ ] Tool Tip on "coding witch" hover with funny text (Casting spells in Typescript, enchanting VS Code and cursing React.)
 - [ ] Page reading progress bar
-- [ ] Move page to custom hosting
 - [ ] Page positioning on Google
 - [x] Automated Experience page (from static files or LinkedIn)
-- [ ] Tool Tip on "coding witch" hover with funny text (Casting spells in Typescript, enchanting VS Code and cursing React.)
 - [ ] Developed apps images in Experience page
 - [ ] Boiling cauldron in Experience with stack section (used technologies)
 - [ ] Medium section
 - [ ] Github section
 - [ ] Instagram section
-- [ ] Cookie Popup fo cookies and a magic cookie with a quote
+- [ ] Cookie Popup for cookies and a magic cookie with a quote
 - [ ] MyLocation detector and text "Currently working from ..."
 - [ ] MyLocation available for user (select location/detect location)
-- [ ] Adjust theme based on users hour
+- [ ] Adjust theme based on user's hour
 - [ ] Animated Weather/Holiday background in intro
 - [ ] PWA with notification about new version or new Medium/Instagram post
 - [ ] Ghost kitties for Halloween

@@ -2,6 +2,8 @@ import React, { memo, useCallback, useEffect, useState } from "react";
 import { Link, LinkProps, animateScroll as scroll } from "react-scroll";
 import styled, { DefaultTheme } from "styled-components";
 
+import { HiMenu } from "react-icons/hi";
+
 import { ThemeContext } from "../../context";
 import ThemeToggler from '../ThemeToggler';
 
@@ -64,7 +66,7 @@ const Navbar: React.FC<{}> = memo(() => {
         >
           🧙‍♀️ Programystic
         </a>
-        <button
+        <StyledToggleMenuIcon
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -72,11 +74,14 @@ const Navbar: React.FC<{}> = memo(() => {
           aria-controls="navbarToggleMenu"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          theme={theme}
+          isScrolled={scrolled}
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          <HiMenu />
+        </StyledToggleMenuIcon>
 
         <div className="collapse navbar-collapse" id="navbarToggleMenu">
+          < hr />
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink to="section-helloworld">Hello World</NavLink>
@@ -85,10 +90,8 @@ const Navbar: React.FC<{}> = memo(() => {
               <NavLink to="section-experience">Experience</NavLink>
             </li>
           </ul>
+          <ThemeToggler />
         </div>
-
-        <ThemeToggler />
-
       </div>
     </StyledNavbar>
   );
@@ -121,6 +124,56 @@ const StyledNavbar = styled.nav<{ theme: DefaultTheme, isScrolled: boolean }>`
       color: ${props => props.theme.colors.menuHoverText};
     }
   }
+
+  hr {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    background-color: ${props => props.theme.colors.menuScrolledBackground};
+    box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.2);
+
+    .navbar-brand, .nav-link {
+      color: ${props => props.theme.colors.menuScrolledStandardText};
+    }
+    
+    .navbar-collapse {
+      margin-top: var(--spacing_xs);
+
+      hr {
+        display: flex;
+        margin: 0;
+        margin-bottom: var(--spacing_xs);;
+        color:  ${props => props.theme.colors.accent};
+      }
+
+      button {
+        padding: 0;
+        margin-top: var(--spacing_xs);
+      }
+    }
+  }
 `
+
+interface StyledToggleMenuIconProps extends React.HTMLAttributes<HTMLButtonElement> {
+  theme: DefaultTheme, 
+  isScrolled: boolean,
+}
+
+const StyledToggleMenuIcon = styled.button<StyledToggleMenuIconProps>`
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: ${props => props.isScrolled ? props.theme.colors.menuScrolledStandardText : props.theme.colors.menuStandardText};
+
+  :focus, :hover, :active, :active:hover {
+    box-shadow: none;
+  }
+
+  :hover {
+    color: ${props => props.theme.colors.menuHoverText};
+  }
+`;
 
 export default Navbar;
