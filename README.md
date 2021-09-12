@@ -13,12 +13,11 @@ Below is a list of MVP features and features for next versions.
 - [x] Hello World Section Content (no typing effect and CV download)
 - [x] CV download
 - [x] Static Experience section content and styles (text only)
-- [ ] Navigation toggle on mobile
+- [x] Navigation toggle on mobile
 - [ ] Navigation styles into global variables
 - [ ] Footer
 - [ ] App icon
 - [ ] Meta data, FB tags, manifest
-- [ ] Accessibility
 - [ ] Analytics
 - [x] Deploy to Github pages
 
@@ -42,6 +41,7 @@ Below is a list of MVP features and features for next versions.
 - [ ] Medium section
 - [ ] Github section
 - [ ] Instagram section
+- [ ] Accessibility
 - [ ] Cookie Popup for cookies and a magic cookie with a quote
 - [ ] MyLocation detector and text "Currently working from ..."
 - [ ] MyLocation available for user (select location/detect location)
