@@ -17,8 +17,8 @@ const HelloWorld: React.FC = memo(() => {
         </h1>
         <p><FaEnvelopeOpenText className="icon" /><a href="mailto:daria.rucka@gmail.com">daria.rucka@gmail.com</a></p>
         <p><FaLinkedinIn className="icon" /><a href="https://www.linkedin.com/in/dariarucka/" target="_blank" rel="noreferrer">dariarucka</a></p>
-        <p><FaGithub className="icon" /><a href="https://github.com/graffme" target="_blank" rel="noreferrer">@graffme</a></p>
-        <p><FaMediumM className="icon" /><a href="https://medium.com/@dariaruckaolszaska" target="_blank" rel="noreferrer">@dariarucka</a></p>
+        <p><FaGithub className="icon" /><a href="https://github.com/programystic-dev" target="_blank" rel="noreferrer">@programystic-dev</a></p>
+        <p><FaMediumM className="icon" /><a href="https://medium.com/@dariaruckaolszaska" target="_blank" rel="noreferrer">@dariaruckaolszaska</a></p>
         <p><FaInstagram className="icon" /><a href="https://www.instagram.com/programystic_dev/" target="_blank" rel="noreferrer">@programystic_dev</a></p>
       </div>
     </StyledHelloWorld>
