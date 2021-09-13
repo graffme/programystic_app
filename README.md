@@ -31,17 +31,17 @@ Below is a list of MVP features and features for next versions.
 - [ ] Storybook
 
 ## Next Features
-- [ ] Typing effect in Hello World
-- [ ] Tool Tip on "coding witch" hover with funny text (Casting spells in Typescript, enchanting VS Code and cursing React.)
+- [x] Typing effect in Hello World
+- [x] Tool Tip on "coding witch" hover with funny text (Casting spells in Typescript, enchanting VS Code and cursing React.)
 - [ ] Page reading progress bar
 - [ ] Page positioning on Google
 - [ ] Dynamic manifest to change color by theme
 - [x] Automated Experience page (from static files or LinkedIn)
-- [ ] Developed apps images in Experience page
 - [ ] Boiling cauldron in Experience with stack section (used technologies)
 - [ ] Medium section
 - [ ] Github section
 - [ ] Instagram section
+- [ ] Developed apps images in Experience page
 - [ ] Accessibility
 - [ ] Cookie Popup for cookies and a magic cookie with a quote
 - [ ] MyLocation detector and text "Currently working from ..."

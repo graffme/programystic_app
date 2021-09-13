@@ -20,10 +20,16 @@ const GlobalStyles = createGlobalStyle`
     --spacing_xl: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.xl};
 
     --smallText: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.small};
+    --h1Size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.h1};
+
+    --headerText: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.header};
     --boldText: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.bold};
 
     --tagText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.tagText};
     --tagBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.tagBackground};
+
+    --tooltipText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.header};
+    --tooltipBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.lightBackground};
   }
 
   html {
