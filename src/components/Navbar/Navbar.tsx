@@ -1,6 +1,7 @@
 import React, { memo, useCallback, useEffect, useState } from "react";
 import { Link, LinkProps, animateScroll as scroll } from "react-scroll";
 import styled, { DefaultTheme } from "styled-components";
+import ReactGA from 'react-ga';
 
 import { HiMenu } from "react-icons/hi";
 
@@ -8,6 +9,15 @@ import { ThemeContext } from "../../context";
 import ThemeToggler from '../ThemeToggler';
 
 const navbarHeight = 56;
+
+type NavbarClickType = 'HelloWorld' | 'Experience' | 'Top';
+
+const gaNavbarClicked = (action: NavbarClickType) => {
+  ReactGA.event({
+    category: 'NavbarLinks',
+    action: action,
+  });
+};
 
 /* Navbar link element */
 interface NavLinkProps extends LinkProps {
@@ -46,6 +56,7 @@ const Navbar: React.FC<{}> = memo(() => {
   }, [navbarColor]);
 
   const scrollToTop = useCallback(() => {
+    gaNavbarClicked('Top');
     scroll.scrollToTop();
   }, []);
 
@@ -84,10 +95,10 @@ const Navbar: React.FC<{}> = memo(() => {
           < hr />
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to="section-helloworld">Hello World</NavLink>
+              <NavLink to="section-helloworld" onClick={() => gaNavbarClicked('HelloWorld')}>Hello World</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="section-experience">Experience</NavLink>
+              <NavLink to="section-experience" onClick={() => gaNavbarClicked('Experience')}>Experience</NavLink>
             </li>
           </ul>
           <ThemeToggler />

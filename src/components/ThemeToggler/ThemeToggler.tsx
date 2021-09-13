@@ -1,12 +1,27 @@
-import React, { memo } from "react";
+import React, { memo, useCallback } from "react";
 import styled from "styled-components";
+import ReactGA from 'react-ga';
 
 import { ThemeContext } from "../../context";
+
+type ThemeChangeType = 'Light' | 'Dark';
+
+const gaThemeChanged = (action: ThemeChangeType) => {
+  ReactGA.event({
+    category: 'Theme',
+    action: action
+  });
+};
 
 const ThemeToggler: React.FC<{}> = memo(() => {
   const { toggleTheme, dark } = React.useContext(ThemeContext);
 
-  return <StyledThemeToggler onClick={toggleTheme}>{dark ? "🌞" : "🌚"}</StyledThemeToggler>;
+  const onClick = useCallback((dark: boolean) => {
+    gaThemeChanged(dark ? 'Dark' : 'Light');
+    toggleTheme();
+  }, [toggleTheme]);
+
+  return <StyledThemeToggler onClick={() => onClick(!dark)}>{dark ? "🌞" : "🌚"}</StyledThemeToggler>;
 });
 
 const StyledThemeToggler = styled.button`

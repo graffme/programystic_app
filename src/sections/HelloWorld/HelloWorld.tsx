@@ -2,6 +2,7 @@ import React, { memo, useEffect } from "react";
 import ReactTooltip from 'react-tooltip';
 import { FaLinkedinIn, FaMediumM, FaInstagram, FaGithub, FaEnvelopeOpenText } from 'react-icons/fa';
 import styled from "styled-components";
+import ReactGA from "react-ga";
 
 import { Section } from "../../components";
 
@@ -52,6 +53,15 @@ const HelloWorld: React.FC = memo(() => {
     }
   }, []);
 
+  type SocialMediaClickType = 'Email' | 'LinkedIn' | 'Github' | 'Medium' | 'Instagram';
+
+  const gaSocialMediaLinkClicked = (action: SocialMediaClickType) => {
+    ReactGA.event({
+      category: 'SocialMediaLinks',
+      action: action,
+    });
+  }
+
   return (
     <StyledHelloWorld
       isDark={true}
@@ -61,11 +71,11 @@ const HelloWorld: React.FC = memo(() => {
       <div className="container">
         { /* eslint-disable-next-line jsx-a11y/heading-has-content */ }
         <h1><span id="typer" className="typer"></span><span id="typer2" className="typer" data-tip data-for='codingWitch'></span><span id="cursor">|</span></h1>
-        <p><FaEnvelopeOpenText className="icon" /><a href="mailto:daria.rucka@gmail.com">daria.rucka@gmail.com</a></p>
-        <p><FaLinkedinIn className="icon" /><a href="https://www.linkedin.com/in/dariarucka/" target="_blank" rel="noreferrer">dariarucka</a></p>
-        <p><FaGithub className="icon" /><a href="https://github.com/programystic-dev" target="_blank" rel="noreferrer">@programystic-dev</a></p>
-        <p><FaMediumM className="icon" /><a href="https://medium.com/@dariaruckaolszaska" target="_blank" rel="noreferrer">@dariaruckaolszaska</a></p>
-        <p><FaInstagram className="icon" /><a href="https://www.instagram.com/programystic_dev/" target="_blank" rel="noreferrer">@programystic_dev</a></p>
+        <p><FaEnvelopeOpenText className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Email")} href="mailto:daria.rucka@gmail.com">daria.rucka@gmail.com</a></p>
+        <p><FaLinkedinIn className="icon" /><a onClick={() => gaSocialMediaLinkClicked("LinkedIn")} href="https://www.linkedin.com/in/dariarucka/" target="_blank" rel="noreferrer">dariarucka</a></p>
+        <p><FaGithub className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Github")} href="https://github.com/programystic-dev" target="_blank" rel="noreferrer">@programystic-dev</a></p>
+        <p><FaMediumM className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Medium")} href="https://medium.com/@dariaruckaolszaska" target="_blank" rel="noreferrer">@dariaruckaolszaska</a></p>
+        <p><FaInstagram className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Instagram")} href="https://www.instagram.com/programystic_dev/" target="_blank" rel="noreferrer">@programystic_dev</a></p>
       </div>
       <ReactTooltip id="codingWitch" place="bottom" effect="solid" className="customTooltip">
         <span>Casting spells in Typescript, enchanting VS Code, cursing React.</span>
@@ -73,23 +83,6 @@ const HelloWorld: React.FC = memo(() => {
     </StyledHelloWorld>
   );
 });
-/*
-- 2 lines 104px;
-1199
-- 3 155px;
-990
-- 2 lines 93px
-767
-- 3 139px;
-513
-- 4 186px;
-500
-- 3 lines 122px;
-448
-- 4 lines 160 px;
-343
-- 5 210px;
-*/
 
 const StyledHelloWorld = styled(Section)`
   margin-Top: 56px;
