@@ -7,7 +7,7 @@ import { ThemeProvider, ThemeContext } from "./context";
 import { Navbar } from "./components";
 import { HelloWorld, Experience } from "./sections";
 
-if (process.env.REACT_APP_GOOGLE_ANALYTICS) {
+if (process.env.REACT_APP_GOOGLE_ANALYTICS && process.env.NODE_ENV === 'production') {
   ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
 }
 

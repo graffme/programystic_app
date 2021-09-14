@@ -75,7 +75,7 @@ const Navbar: React.FC<{}> = memo(() => {
           onClick={scrollToTop}
           href="#top"
         >
-          🧙‍♀️ Programystic
+          <img className='brand-icon' src={process.env.PUBLIC_URL + '/logo192.png'} alt="Brand icon - woman mage emoji" /> Programystic
         </a>
         <StyledToggleMenuIcon
           className="navbar-toggler"
@@ -117,11 +117,19 @@ const StyledNavbar = styled.nav<{ theme: DefaultTheme, isScrolled: boolean }>`
     color: ${props => props.isScrolled ? props.theme.colors.menuScrolledStandardText : props.theme.colors.menuStandardText};
     font-weight: ${props => props.theme.text.weight.regular};
     margin-right: var(--spacing_md);
+    align-items: center;
+    display: flex;
   }
 
   .navbar-brand:hover {
     color: ${props => props.theme.colors.menuHoverText};
   }
+
+  .brand-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: var(--spacing_xs);
+  } 
 
   .nav-link {
     color: ${props => props.isScrolled ? props.theme.colors.menuScrolledStandardText : props.theme.colors.menuStandardText};
