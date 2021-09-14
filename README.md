@@ -16,7 +16,7 @@ Below is a list of MVP features and features for next versions.
 - [x] Navigation toggle on mobile
 - [x] Footer
 - [x] App icon
-- [ ] Meta data, FB tags, manifest
+- [x] Meta data, FB tags, manifest
 - [x] Analytics
 - [x] Deploy to Github pages
 
