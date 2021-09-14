@@ -95,6 +95,12 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.icon};
   }
 
+  a {
+    .icon:hover {
+      color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.hoverLink};
+    }
+  }
+
   ::-moz-selection {
     background: ${({ theme }: { theme: DefaultTheme }) => theme.colors.accent};
     color: ${({ theme }: { theme: DefaultTheme }) => theme.colors.primary};

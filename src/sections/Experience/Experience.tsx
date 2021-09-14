@@ -1,18 +1,11 @@
 import React, { memo } from "react";
 import { importMDX } from "mdx.macro";
 import styled from "styled-components";
-import ReactGA from 'react-ga';
 
 import { Button, Section } from "../../components";
+import { Analytics } from "../../services";
 
 const Content = React.lazy(() => importMDX("./ExperienceContent.mdx"));
-
-const gaCVDownload = () => {
-  ReactGA.event({
-    category: 'CV',
-    action: 'Download'
-  });
-};
 
 const Experience: React.FC = memo(() => {
   return (
@@ -36,7 +29,7 @@ const Experience: React.FC = memo(() => {
               CV in pdf format.
             </p>
           </div>
-          <Button onClick={gaCVDownload}><a href={process.env.PUBLIC_URL + '/CV.pdf'} target='_blank' rel='noopener noreferrer'>Download CV.pdf</a></Button>
+          <Button onClick={Analytics.gaCVDownload}><a href={process.env.PUBLIC_URL + '/CV.pdf'} target='_blank' rel='noopener noreferrer'>Download CV.pdf</a></Button>
         </div>
       </div>
     </StyledExperience>

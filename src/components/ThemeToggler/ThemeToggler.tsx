@@ -1,23 +1,14 @@
 import React, { memo, useCallback } from "react";
 import styled from "styled-components";
-import ReactGA from 'react-ga';
 
 import { ThemeContext } from "../../context";
-
-type ThemeChangeType = 'Light' | 'Dark';
-
-const gaThemeChanged = (action: ThemeChangeType) => {
-  ReactGA.event({
-    category: 'Theme',
-    action: action
-  });
-};
+import { Analytics } from "../../services";
 
 const ThemeToggler: React.FC<{}> = memo(() => {
   const { toggleTheme, dark } = React.useContext(ThemeContext);
 
   const onClick = useCallback((dark: boolean) => {
-    gaThemeChanged(dark ? 'Dark' : 'Light');
+    Analytics.gaThemeChanged(dark ? 'Dark' : 'Light');
     toggleTheme();
   }, [toggleTheme]);
 

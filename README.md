@@ -14,11 +14,10 @@ Below is a list of MVP features and features for next versions.
 - [x] CV download
 - [x] Static Experience section content and styles (text only)
 - [x] Navigation toggle on mobile
-- [ ] Navigation styles into global variables
-- [ ] Footer
-- [ ] App icon
+- [x] Footer
+- [x] App icon
 - [ ] Meta data, FB tags, manifest
-- [ ] Analytics
+- [x] Analytics
 - [x] Deploy to Github pages
 
 ## Tech Features
@@ -54,4 +53,6 @@ Below is a list of MVP features and features for next versions.
 - [ ] Play mode Tool Tip and gems collecting as user explore the page and hidden features
 - [ ] Simple game: to define / Pomodoro
 
-
+## Fixes
+- [ ] Navigation styles into global variables
+- [ ] Fix theme toggle / bulb icons on Android

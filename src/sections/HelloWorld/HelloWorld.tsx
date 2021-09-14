@@ -2,8 +2,8 @@ import React, { memo, useEffect } from "react";
 import ReactTooltip from 'react-tooltip';
 import { FaLinkedinIn, FaMediumM, FaInstagram, FaGithub, FaEnvelopeOpenText } from 'react-icons/fa';
 import styled from "styled-components";
-import ReactGA from "react-ga";
 
+import { Analytics } from '../../services';
 import { Section } from "../../components";
 
 const HelloWorld: React.FC = memo(() => {
@@ -53,15 +53,6 @@ const HelloWorld: React.FC = memo(() => {
     }
   }, []);
 
-  type SocialMediaClickType = 'Email' | 'LinkedIn' | 'Github' | 'Medium' | 'Instagram';
-
-  const gaSocialMediaLinkClicked = (action: SocialMediaClickType) => {
-    ReactGA.event({
-      category: 'SocialMediaLinks',
-      action: action,
-    });
-  }
-
   return (
     <StyledHelloWorld
       isDark={true}
@@ -71,11 +62,11 @@ const HelloWorld: React.FC = memo(() => {
       <div className="container">
         { /* eslint-disable-next-line jsx-a11y/heading-has-content */ }
         <h1><span id="typer" className="typer"></span><span id="typer2" className="typer" data-tip data-for='codingWitch'></span><span id="cursor">|</span></h1>
-        <p><FaEnvelopeOpenText className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Email")} href="mailto:daria.rucka@gmail.com">daria.rucka@gmail.com</a></p>
-        <p><FaLinkedinIn className="icon" /><a onClick={() => gaSocialMediaLinkClicked("LinkedIn")} href="https://www.linkedin.com/in/dariarucka/" target="_blank" rel="noreferrer">dariarucka</a></p>
-        <p><FaGithub className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Github")} href="https://github.com/programystic-dev" target="_blank" rel="noreferrer">@programystic-dev</a></p>
-        <p><FaMediumM className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Medium")} href="https://medium.com/@dariaruckaolszaska" target="_blank" rel="noreferrer">@dariaruckaolszaska</a></p>
-        <p><FaInstagram className="icon" /><a onClick={() => gaSocialMediaLinkClicked("Instagram")} href="https://www.instagram.com/programystic_dev/" target="_blank" rel="noreferrer">@programystic_dev</a></p>
+        <p><FaEnvelopeOpenText className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Email")} href="mailto:daria.rucka@gmail.com">daria.rucka@gmail.com</a></p>
+        <p><FaLinkedinIn className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("LinkedIn")} href="https://www.linkedin.com/in/dariarucka/" target="_blank" rel="noreferrer">dariarucka</a></p>
+        <p><FaGithub className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Github")} href="https://github.com/programystic-dev" target="_blank" rel="noreferrer">@programystic-dev</a></p>
+        <p><FaMediumM className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Medium")} href="https://medium.com/@dariaruckaolszaska" target="_blank" rel="noreferrer">@dariaruckaolszaska</a></p>
+        <p><FaInstagram className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Instagram")} href="https://www.instagram.com/programystic_dev/" target="_blank" rel="noreferrer">@programystic_dev</a></p>
       </div>
       <ReactTooltip id="codingWitch" place="bottom" effect="solid" className="customTooltip">
         <span>Casting spells in Typescript, enchanting VS Code, cursing React.</span>
