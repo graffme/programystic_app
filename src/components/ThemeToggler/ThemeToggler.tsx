@@ -1,5 +1,5 @@
 import React, { memo, useCallback } from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { ThemeContext } from "../../context";
 import { Analytics } from "../../services";
@@ -7,12 +7,19 @@ import { Analytics } from "../../services";
 const ThemeToggler: React.FC<{}> = memo(() => {
   const { toggleTheme, dark } = React.useContext(ThemeContext);
 
-  const onClick = useCallback((dark: boolean) => {
-    Analytics.gaThemeChanged(dark ? 'Dark' : 'Light');
-    toggleTheme();
-  }, [toggleTheme]);
+  const onClick = useCallback(
+    (dark: boolean) => {
+      Analytics.gaThemeChanged(dark ? "Dark" : "Light");
+      toggleTheme();
+    },
+    [toggleTheme]
+  );
 
-  return <StyledThemeToggler onClick={() => onClick(!dark)}>{dark ? "🌞" : "🌚"}</StyledThemeToggler>;
+  return (
+    <StyledThemeToggler onClick={() => onClick(!dark)}>
+      {dark ? "🌞" : "🌚"}
+    </StyledThemeToggler>
+  );
 });
 
 const StyledThemeToggler = styled.button`

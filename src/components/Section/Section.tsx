@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import styled, { DefaultTheme } from "styled-components";
+import styled, { DefaultTheme } from "styled-components/macro";
 
 import { ThemeContext } from "../../context";
 
@@ -7,11 +7,17 @@ interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
   isDark: boolean;
 }
 
-const Section: React.FC<SectionProps> = memo(({ children, isDark, ...rest }) => {
-  const { theme } = React.useContext(ThemeContext);
+const Section: React.FC<SectionProps> = memo(
+  ({ children, isDark, ...rest }) => {
+    const { theme } = React.useContext(ThemeContext);
 
-  return <StyledSection theme={theme} isDark={isDark} {...rest}>{children}</StyledSection>;
-});
+    return (
+      <StyledSection theme={theme} isDark={isDark} {...rest}>
+        {children}
+      </StyledSection>
+    );
+  }
+);
 
 const StyledSection = styled.div<{ theme: DefaultTheme; isDark: boolean }>`
   --sectionBackgroundLight: ${(props) => props.theme.colors.lightBackground};

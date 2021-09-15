@@ -1,13 +1,16 @@
 import React, { memo, useEffect } from "react";
-import {ThemeProvider as StyledThemeProvider} from "styled-components";
-import ReactGA from 'react-ga';
+import { ThemeProvider as StyledThemeProvider } from "styled-components";
+import ReactGA from "react-ga";
 
 import { GlobalStyles } from "./styles";
 import { ThemeProvider, ThemeContext } from "./context";
 import { Navbar } from "./components";
 import { HelloWorld, Experience, Footer } from "./sections";
 
-if (process.env.REACT_APP_GOOGLE_ANALYTICS && process.env.NODE_ENV === 'production') {
+if (
+  process.env.REACT_APP_GOOGLE_ANALYTICS &&
+  process.env.NODE_ENV === "production"
+) {
   ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
 }
 
@@ -21,7 +24,7 @@ const AppContent: React.FC<{}> = memo(() => {
 
   return (
     <StyledThemeProvider theme={theme}>
-      <GlobalStyles/>
+      <GlobalStyles />
       <Navbar />
       <HelloWorld />
       <Experience />

@@ -1,17 +1,23 @@
-import { createGlobalStyle, DefaultTheme } from 'styled-components';
+import { createGlobalStyle, DefaultTheme } from "styled-components/macro";
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --lightBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.lightBackground};
-    --darkBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.darkBackground};
+    --lightBackground: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.lightBackground};
+    --darkBackground: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.darkBackground};
     --text: ${({ theme }: { theme: DefaultTheme }) => theme.colors.text};
     --header: ${({ theme }: { theme: DefaultTheme }) => theme.colors.header};
     --primary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.primary};
-    --secondary: ${({ theme }: { theme: DefaultTheme }) => theme.colors.secondary};
+    --secondary: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.secondary};
     --accent: ${({ theme }: { theme: DefaultTheme }) => theme.colors.accent};
-    --buttonBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonBackground};
-    --buttonPressedBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonPressedBackground};
-    --buttonText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.buttonText};
+    --buttonBackground: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.buttonBackground};
+    --buttonPressedBackground: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.buttonPressedBackground};
+    --buttonText: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.buttonText};
 
     --spacing_xs: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.xs};
     --spacing_sm: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.sm};
@@ -19,17 +25,23 @@ const GlobalStyles = createGlobalStyle`
     --spacing_lg: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.lg};
     --spacing_xl: ${({ theme }: { theme: DefaultTheme }) => theme.spacing.xl};
 
-    --smallText: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.small};
+    --smallText: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.text.size.small};
     --h1Size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.h1};
 
-    --headerText: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.header};
-    --boldText: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.bold};
+    --headerText: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.text.weight.header};
+    --boldText: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.text.weight.bold};
 
     --tagText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.tagText};
-    --tagBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.tagBackground};
+    --tagBackground: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.tagBackground};
 
-    --tooltipText: ${({ theme }: { theme: DefaultTheme }) => theme.colors.header};
-    --tooltipBackground: ${({ theme }: { theme: DefaultTheme }) => theme.colors.lightBackground};
+    --tooltipText: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.header};
+    --tooltipBackground: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.colors.lightBackground};
   }
 
   html {
@@ -38,13 +50,15 @@ const GlobalStyles = createGlobalStyle`
 
   @media (max-width: 900px) {
     html { 
-      font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.baseMedium};
+      font-size: ${({ theme }: { theme: DefaultTheme }) =>
+        theme.text.size.baseMedium};
     }
   }
 
   @media (max-width: 500px) {
     html { 
-      font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.baseSmall};
+      font-size: ${({ theme }: { theme: DefaultTheme }) =>
+        theme.text.size.baseSmall};
     }
   }
 
@@ -54,17 +68,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   p, span, ul, li {
-    font-size: ${({ theme }: { theme: DefaultTheme }) => theme.text.size.regular};
-    font-weight: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.regular};
+    font-size: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.text.size.regular};
+    font-weight: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.text.weight.regular};
   }
 
   h1, h2, h3, h4 {
     color: var(--header);
-    font-weight: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.header};
+    font-weight: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.text.weight.header};
   }
 
   strong {
-    font-weight: ${({ theme }: { theme: DefaultTheme }) => theme.text.weight.bold};
+    font-weight: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.text.weight.bold};
   }
 
   h1 {

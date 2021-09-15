@@ -1,9 +1,15 @@
 import React, { memo, useEffect } from "react";
-import ReactTooltip from 'react-tooltip';
-import { FaLinkedinIn, FaMediumM, FaInstagram, FaGithub, FaEnvelopeOpenText } from 'react-icons/fa';
-import styled from "styled-components";
+import ReactTooltip from "react-tooltip";
+import {
+  FaLinkedinIn,
+  FaMediumM,
+  FaInstagram,
+  FaGithub,
+  FaEnvelopeOpenText,
+} from "react-icons/fa";
+import styled from "styled-components/macro";
 
-import { Analytics } from '../../services';
+import { Analytics } from "../../services";
 import { Section } from "../../components";
 
 const HelloWorld: React.FC = memo(() => {
@@ -11,8 +17,8 @@ const HelloWorld: React.FC = memo(() => {
   useEffect(() => {
     let i = 0;
     let j = 0;
-    const txt = 'Hello World. I am Daria. A mobile developer and a ';
-    const txt2 = 'coding witch.'
+    const txt = "Hello World. I am Daria. A mobile developer and a ";
+    const txt2 = "coding witch.";
     const speed = 100;
     const typer = document.getElementById("typer");
     const typer2 = document.getElementById("typer2");
@@ -22,11 +28,11 @@ const HelloWorld: React.FC = memo(() => {
     let timer2: NodeJS.Timeout;
 
     if (typer && typer2) {
-      typer.innerHTML = '';
-      typer2.innerHTML = '';
+      typer.innerHTML = "";
+      typer2.innerHTML = "";
       typer2.classList.remove("active");
     }
-    
+
     const typeWriter = () => {
       if (i < txt.length && typer) {
         typer.innerHTML += txt.charAt(i);
@@ -43,14 +49,14 @@ const HelloWorld: React.FC = memo(() => {
       } else {
         if (cursor) cursor.classList.add("blink");
       }
-    }
+    };
 
     typeWriter();
 
     return () => {
       clearTimeout(timer);
       clearTimeout(timer2);
-    }
+    };
   }, []);
 
   return (
@@ -60,23 +66,87 @@ const HelloWorld: React.FC = memo(() => {
       className="container-fluid"
     >
       <div className="container">
-        { /* eslint-disable-next-line jsx-a11y/heading-has-content */ }
-        <h1><span id="typer" className="typer"></span><span id="typer2" className="typer" data-tip data-for='codingWitch'></span><span id="cursor">|</span></h1>
-        <p><FaEnvelopeOpenText className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Email")} href="mailto:daria.rucka@gmail.com">daria.rucka@gmail.com</a></p>
-        <p><FaLinkedinIn className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("LinkedIn")} href="https://www.linkedin.com/in/dariarucka/" target="_blank" rel="noreferrer">dariarucka</a></p>
-        <p><FaGithub className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Github")} href="https://github.com/programystic-dev" target="_blank" rel="noreferrer">@programystic-dev</a></p>
-        <p><FaMediumM className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Medium")} href="https://medium.com/@dariaruckaolszaska" target="_blank" rel="noreferrer">@dariaruckaolszaska</a></p>
-        <p><FaInstagram className="icon" /><a onClick={() => Analytics.gaSocialMediaLinkClicked("Instagram")} href="https://www.instagram.com/programystic_dev/" target="_blank" rel="noreferrer">@programystic_dev</a></p>
+        {/* eslint-disable-next-line jsx-a11y/heading-has-content */}
+        <h1>
+          <span id="typer" className="typer"></span>
+          <span
+            id="typer2"
+            className="typer"
+            data-tip
+            data-for="codingWitch"
+          ></span>
+          <span id="cursor">|</span>
+        </h1>
+        <p>
+          <FaEnvelopeOpenText className="icon" />
+          <a
+            onClick={() => Analytics.gaSocialMediaLinkClicked("Email")}
+            href="mailto:daria.rucka@gmail.com"
+          >
+            daria.rucka@gmail.com
+          </a>
+        </p>
+        <p>
+          <FaLinkedinIn className="icon" />
+          <a
+            onClick={() => Analytics.gaSocialMediaLinkClicked("LinkedIn")}
+            href="https://www.linkedin.com/in/dariarucka/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            dariarucka
+          </a>
+        </p>
+        <p>
+          <FaGithub className="icon" />
+          <a
+            onClick={() => Analytics.gaSocialMediaLinkClicked("Github")}
+            href="https://github.com/programystic-dev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @programystic-dev
+          </a>
+        </p>
+        <p>
+          <FaMediumM className="icon" />
+          <a
+            onClick={() => Analytics.gaSocialMediaLinkClicked("Medium")}
+            href="https://medium.com/@dariaruckaolszaska"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @dariaruckaolszaska
+          </a>
+        </p>
+        <p>
+          <FaInstagram className="icon" />
+          <a
+            onClick={() => Analytics.gaSocialMediaLinkClicked("Instagram")}
+            href="https://www.instagram.com/programystic_dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @programystic_dev
+          </a>
+        </p>
       </div>
-      <ReactTooltip id="codingWitch" place="bottom" effect="solid" className="customTooltip">
-        <span>Casting spells in Typescript, enchanting VS Code, cursing React.</span>
+      <ReactTooltip
+        id="codingWitch"
+        place="bottom"
+        effect="solid"
+        className="customTooltip"
+      >
+        <span>
+          Casting spells in Typescript, enchanting VS Code, cursing React.
+        </span>
       </ReactTooltip>
     </StyledHelloWorld>
   );
 });
 
 const StyledHelloWorld = styled(Section)`
-  margin-Top: 56px;
+  margin-top: 56px;
   display: flex;
   align-items: center;
   padding: var(--spacing_xl) 0;
@@ -147,7 +217,7 @@ const StyledHelloWorld = styled(Section)`
   .blink {
     animation: blinker 1.5s linear infinite;
   }
-  
+
   @keyframes blinker {
     50% {
       opacity: 0;

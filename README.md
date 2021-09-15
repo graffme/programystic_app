@@ -21,7 +21,7 @@ Below is a list of MVP features and features for next versions.
 - [x] Deploy to Github pages
 
 ## Tech Features
-- [ ] Prettier and husky configuration, fix for code style
+- [x] Prettier and husky configuration, fix for code style
 - [ ] Automatic deploy on production
 - [ ] Automatic versioning and changelog
 - [ ] Env variables stored on CI

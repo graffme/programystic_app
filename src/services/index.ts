@@ -1,3 +1,3 @@
-import * as Analytics from './analytics';
+import * as Analytics from "./analytics";
 
 export { Analytics };

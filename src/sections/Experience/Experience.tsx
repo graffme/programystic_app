@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { importMDX } from "mdx.macro";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { Button, Section } from "../../components";
 import { Analytics } from "../../services";
@@ -25,11 +25,19 @@ const Experience: React.FC = memo(() => {
           <div className="wrapper">
             <p className="bulb">💡</p>
             <p className="download_cv_text">
-              TLDR? But, if you are still interested in my whole experience please download my
-              CV in pdf format.
+              TLDR? But, if you are still interested in my whole experience
+              please download my CV in pdf format.
             </p>
           </div>
-          <Button onClick={Analytics.gaCVDownload}><a href={process.env.PUBLIC_URL + '/CV.pdf'} target='_blank' rel='noopener noreferrer'>Download CV.pdf</a></Button>
+          <Button onClick={Analytics.gaCVDownload}>
+            <a
+              href={process.env.PUBLIC_URL + "/CV.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV.pdf
+            </a>
+          </Button>
         </div>
       </div>
     </StyledExperience>
