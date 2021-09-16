@@ -8,6 +8,7 @@ import { Navbar } from "./components";
 import { HelloWorld, Experience, Footer } from "./sections";
 
 console.log(process.env.REACT_APP_TEST);
+console.log(process.env.REACT_APP_GOOGLE_ANALYTICS);
 
 if (
   process.env.REACT_APP_GOOGLE_ANALYTICS &&
