@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/programystic_app/static/css/main.e520895a.chunk.css",
-    "main.js": "/programystic_app/static/js/main.5b7191d2.chunk.js",
-    "main.js.map": "/programystic_app/static/js/main.5b7191d2.chunk.js.map",
+    "main.js": "/programystic_app/static/js/main.97b50689.chunk.js",
+    "main.js.map": "/programystic_app/static/js/main.97b50689.chunk.js.map",
     "runtime-main.js": "/programystic_app/static/js/runtime-main.30f4564d.js",
     "runtime-main.js.map": "/programystic_app/static/js/runtime-main.30f4564d.js.map",
     "static/js/2.8bd7f602.chunk.js": "/programystic_app/static/js/2.8bd7f602.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.30f4564d.js",
     "static/js/2.8bd7f602.chunk.js",
     "static/css/main.e520895a.chunk.css",
-    "static/js/main.5b7191d2.chunk.js"
+    "static/js/main.97b50689.chunk.js"
   ]
 }
