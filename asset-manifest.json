@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/programystic_app/static/css/main.e520895a.chunk.css",
-    "main.js": "/programystic_app/static/js/main.01e7d0ca.chunk.js",
-    "main.js.map": "/programystic_app/static/js/main.01e7d0ca.chunk.js.map",
+    "main.js": "/programystic_app/static/js/main.0dc4b692.chunk.js",
+    "main.js.map": "/programystic_app/static/js/main.0dc4b692.chunk.js.map",
     "runtime-main.js": "/programystic_app/static/js/runtime-main.30f4564d.js",
     "runtime-main.js.map": "/programystic_app/static/js/runtime-main.30f4564d.js.map",
-    "static/js/2.d7376af5.chunk.js": "/programystic_app/static/js/2.d7376af5.chunk.js",
-    "static/js/2.d7376af5.chunk.js.map": "/programystic_app/static/js/2.d7376af5.chunk.js.map",
+    "static/js/2.9d26b4a7.chunk.js": "/programystic_app/static/js/2.9d26b4a7.chunk.js",
+    "static/js/2.9d26b4a7.chunk.js.map": "/programystic_app/static/js/2.9d26b4a7.chunk.js.map",
     "static/js/3.4fac2cbd.chunk.js": "/programystic_app/static/js/3.4fac2cbd.chunk.js",
     "static/js/3.4fac2cbd.chunk.js.map": "/programystic_app/static/js/3.4fac2cbd.chunk.js.map",
     "static/js/4.e4baaba0.chunk.js": "/programystic_app/static/js/4.e4baaba0.chunk.js",
     "static/js/4.e4baaba0.chunk.js.map": "/programystic_app/static/js/4.e4baaba0.chunk.js.map",
     "index.html": "/programystic_app/index.html",
     "static/css/main.e520895a.chunk.css.map": "/programystic_app/static/css/main.e520895a.chunk.css.map",
-    "static/js/2.d7376af5.chunk.js.LICENSE.txt": "/programystic_app/static/js/2.d7376af5.chunk.js.LICENSE.txt"
+    "static/js/2.9d26b4a7.chunk.js.LICENSE.txt": "/programystic_app/static/js/2.9d26b4a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.30f4564d.js",
-    "static/js/2.d7376af5.chunk.js",
+    "static/js/2.9d26b4a7.chunk.js",
     "static/css/main.e520895a.chunk.css",
-    "static/js/main.01e7d0ca.chunk.js"
+    "static/js/main.0dc4b692.chunk.js"
   ]
 }
