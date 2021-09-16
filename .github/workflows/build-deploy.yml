@@ -27,6 +27,8 @@ jobs:
     
     - name: Build project
       run: yarn build
+      env:
+        REACT_APP_GOOGLE_ANALYTICS: ${{ secrets.REACT_APP_GOOGLE_ANALYTICS }}
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
