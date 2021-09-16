@@ -23,7 +23,7 @@ Below is a list of MVP features and features for next versions.
 ## Tech Features
 - [x] Prettier and husky configuration, fix for code style
 - [x] Automatic deploy on production
-- [ ] Env secret variables stored on Github Secrets
+- [x] Env secret variables stored on Github Secrets
 - [ ] Automatic versioning and changelog
 - [ ] Better docs on technical stack used
 - [ ] Basic tests for current page
