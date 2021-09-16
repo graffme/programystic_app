@@ -7,8 +7,7 @@ import { ThemeProvider, ThemeContext } from "./context";
 import { Navbar } from "./components";
 import { HelloWorld, Experience, Footer } from "./sections";
 
-console.log("node", process.env.NODE_ENV);
-console.log("ga", process.env.REACT_APP_GOOGLE_ANALYTICS);
+console.log(process.env.REACT_APP_TEST);
 
 if (
   process.env.REACT_APP_GOOGLE_ANALYTICS &&
