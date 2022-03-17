@@ -25,7 +25,7 @@ Below is a list of MVP features and features for next versions.
 - [x] Automatic deploy on production
 - [x] Env secret variables stored on Github Secrets
 - [ ] Automatic versioning and changelog
-- [ ] Better docs on technical stack used
+- [ ] Add docs with docsify
 - [ ] Basic tests for current page
 - [ ] Storybook
 
