@@ -29,6 +29,10 @@ Below is a list of MVP features and features for next versions.
 - [ ] Basic tests for current page
 - [ ] Storybook
 
+## V1 Features
+- [ ] Move to Gatsby
+- [ ] Add UI Framework 
+
 ## Next Features
 - [x] Typing effect in Hello World
 - [x] Tool Tip on "coding witch" hover with funny text (Casting spells in Typescript, enchanting VS Code and cursing React.)
@@ -40,7 +44,7 @@ Below is a list of MVP features and features for next versions.
 - [ ] Medium section
 - [ ] Github section
 - [ ] Instagram section
-- [ ] Developed apps images in Experience page
+- [ ] Add recruiter mod to show only Main, Stack and Experience sections
 - [ ] Accessibility
 - [ ] Cookie Popup for cookies and a magic cookie with a quote
 - [ ] MyLocation detector and text "Currently working from ..."
@@ -51,7 +55,7 @@ Below is a list of MVP features and features for next versions.
 - [ ] Ghost kitties for Halloween
 - [ ] User palette changer
 - [ ] Play mode Tool Tip and gems collecting as user explore the page and hidden features
-- [ ] Simple game: to define / Pomodoro
+- [ ] Simple game/apps: Pomodoro, Clock, Crystal Ball, Ketchup 
 
 ## Fixes
 - [ ] Navigation styles into global variables
