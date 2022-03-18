@@ -1924,6 +1924,21 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@semantic-release/changelog@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-6.0.1.tgz#8dd0334fd8c7d50cda747d2591e4f18f816b3c9c"
+  integrity sha512-FT+tAGdWHr0RCM3EpWegWnvXJ05LQtBkQUaQRIExONoXjVjLuOILNm4DEKNaV+GAQyJjbLRVs57ti//GypH6PA==
+  dependencies:
+    "@semantic-release/error" "^3.0.0"
+    aggregate-error "^3.0.0"
+    fs-extra "^9.0.0"
+    lodash "^4.17.4"
+
+"@semantic-release/error@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-3.0.0.tgz#30a3b97bbb5844d695eb22f9d3aa40f6a92770c2"
+  integrity sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
@@ -6153,7 +6168,7 @@ fs-extra@^7.0.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^9.0.1:
+fs-extra@^9.0.0, fs-extra@^9.0.1:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
   integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==

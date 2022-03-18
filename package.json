@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://graffme.github.io/programystic_app/",
   "dependencies": {
+    "@semantic-release/changelog": "^6.0.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -82,5 +83,28 @@
     "mdx.macro": "^0.2.9",
     "react-icons": "^4.2.0",
     "stylelint-config-prettier": "^8.0.2"
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
+  "release": {
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
   }
 }
